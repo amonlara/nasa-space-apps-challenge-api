@@ -1,1 +1,1 @@
-web: java -Dserver.port=$PORT -Dspring.profiles.active=prod $JAVA_OPTS -jar target/nasa-space-apps-challenge*.jar
+web: java -Dserver.port=$PORT -Dspring.data.mongodb.uri=$MONGO_URI -Dspring.profiles.active=prod $JAVA_OPTS -jar target/nasa-space-apps-challenge*.jar
