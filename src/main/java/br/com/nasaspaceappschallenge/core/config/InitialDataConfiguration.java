@@ -33,10 +33,10 @@ public class InitialDataConfiguration {
         System.out.println("Started after Spring boot application !");
         
 		try {
-			eventRepository.deleteAll();
-			actingRepository.deleteAll();
-			agentRepository.deleteAll();
-			
+//			eventRepository.deleteAll();
+//			actingRepository.deleteAll();
+//			agentRepository.deleteAll();
+//			
 			List<Event> lisEvents = ResourceUtils.loadEventsFromJson("/data/json/events.json");
 //			eventRepository.saveAll(lisEvents);
 		} catch (JsonProcessingException e) {
