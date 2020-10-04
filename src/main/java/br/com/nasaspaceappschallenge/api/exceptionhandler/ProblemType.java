@@ -19,7 +19,7 @@ public enum ProblemType {
 	private String uri;
 	
 	ProblemType(String path, String title) {
-		this.uri = "https://api.ze-code-challenge-back.com.br" + path;
+		this.uri = "https://smoke-jumpers-app.herokuapp.com" + path;
 		this.title = title;
 	}
 	
