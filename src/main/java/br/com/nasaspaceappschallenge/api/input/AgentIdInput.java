@@ -11,7 +11,7 @@ import lombok.Setter;
 @Data
 public class AgentIdInput {
 	
-	@NotNull
+//	@NotNull
 	private Long id;
 
 }

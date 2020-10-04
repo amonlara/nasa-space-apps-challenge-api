@@ -34,7 +34,6 @@ public class ActingService {
 	
 	public Acting save(@Valid Acting acting) {
 
-		validateAgent(acting);
 		acting.setId(sequenceGeneratorService.generateSequence(Acting.SEQUENCE_NAME));
 		Acting save = actingRepository.save(acting);
 
@@ -50,12 +49,6 @@ public class ActingService {
 		return save;
 	}
 	
-	private void validateAgent(@Valid Acting acting) {
-
-		Agent findById = agentService.findById(acting.getAgent().getId());
-		acting.setAgent(findById);
-		
-	}
 
 	public List<Acting> findAll() {
 		return actingRepository.findAll();

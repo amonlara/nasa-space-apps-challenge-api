@@ -27,8 +27,8 @@ public class ActingInput {
     @GeoSpatialIndexed(type = GeoSpatialIndexType.GEO_2DSPHERE)
     private GeoJsonPoint address; 
 	
-	@Valid
-	@NotNull
+//	@Valid
+//	@NotNull
 	private AgentIdInput agent;
 	
 }
